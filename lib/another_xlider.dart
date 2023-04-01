@@ -1920,8 +1920,9 @@ class FlutterSliderState extends State<FlutterSlider> with TickerProviderStateMi
       );
     }
 
-    Widget tooltipWidget = IgnorePointer(
-      child: Center(
+    Widget tooltipWidget = 
+//       IgnorePointer(  child: 
+    Center(
         child: FittedBox(
           child: Container(
             key: (side == 'left') ? leftTooltipKey : rightTooltipKey,
@@ -1936,7 +1937,7 @@ class FlutterSliderState extends State<FlutterSlider> with TickerProviderStateMi
                   ),
           ),
         ),
-      ),
+//       ),
     );
 
     double? top, right, bottom, left;
